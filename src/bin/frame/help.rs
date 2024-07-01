@@ -56,7 +56,7 @@ impl Help {
 
 fn split_surround(full: Rect) -> Surround {
     let outer = centered_rect(full, 80, 80);
-    let title = Line::from(" Press F1 to toggle this Help ").alignment(Alignment::Right);
+    let title = Line::from(" Press `?` to toggle this Help ").alignment(Alignment::Right);
     Surround::new(
         Block::new()
             .title(" Help ")

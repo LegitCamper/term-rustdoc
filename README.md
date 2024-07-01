@@ -20,7 +20,7 @@ rustup update nightly
 This tool is very immature, and far from the target for now. It only provides 
 the basic ability to compile and cache docs, and view markdown docs.
 
-Key shortcuts or usage help can be found via `F1` key press.
+Key shortcuts or usage help can be found via `?` key press.
 
 ![help](https://github.com/zjp-CN/term-rustdoc/assets/25300418/62166720-ba49-49af-9da4-77faaef03d02)
 

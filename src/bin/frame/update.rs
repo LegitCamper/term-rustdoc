@@ -42,11 +42,18 @@ impl Frame {
             }
         }
 
-        if let KeyCode::F(1) = key_event.code {
+        if let KeyCode::Char('?') = key_event.code {
             if !matches!(self.focus, Focus::Help) {
                 self.get_help();
             } else {
                 self.switch_focus();
+            }
+            return;
+        }
+
+        if let KeyCode::Esc = key_event.code {
+            if matches!(self.focus, Focus::Help) {
+                self.switch_focus()
             }
             return;
         }
